@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Ensure it uses the Dockerfile in the same directory
+    environment:
+      - PORT=4003  # Set the port here
+    ports:
+      - "4003:4003"  # Maps port 4003 on the host to port 4003 in the container
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
