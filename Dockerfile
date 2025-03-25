@@ -22,7 +22,7 @@ ENV PORT=80
 COPY --from=build /frontend/build /usr/share/nginx/html
 
 # Expose the port (configured through the ENV variable)
-EXPOSE 4003
+EXPOSE 80
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]

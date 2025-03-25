@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile  # Ensure it uses the Dockerfile in the same directory
     ports:
-      - "4003:80"  # Maps port 4003 on the host to port 80 in the container
+      - "80:80"  # Maps port 4003 on the host to port 80 in the container
     networks:
       - app-network
     restart: always
