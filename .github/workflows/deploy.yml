@@ -28,7 +28,7 @@ jobs:
             cd /var/www/bo/interavia-react
 
             # Pull the latest changes from the staging branch
-            git pull origin staging
+            git pull origin main
 
             # Build and deploy the frontend container
             docker-compose build frontend
